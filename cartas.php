@@ -28,6 +28,9 @@ foreach ($jugadores as $jugador) {
     $segunda_carta = array_shift($mazo);
     $tercera_carta = array_shift($mazo);
 
+    #tratar de mejorar el reparto de manos encapsulando otro foreach con diferentes "mangas" o repartos.
+
+
     # calculando el valor de la mano
     $valor_de_mano = $primera_carta['valor']+$segunda_carta['valor']+$tercera_carta['valor'];
 
