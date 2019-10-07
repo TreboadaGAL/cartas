@@ -16,9 +16,18 @@ class baraja {
                 $this->mazo[] = array("palo"=>$palo, "valor"=>$valor);
             }
         }
+        return $this->mazo;
     }
     public function mezcla() {
-        shuffle($this->mazo);
+        if(!empty($this->mazo)) {
+            shuffle($this->mazo);
+        }
+        else {
+            $this->mazo;
+            shuffle($this->mazo);
+        }
+        return $this->mazo;
     }
 }
+
 ?>
